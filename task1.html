@@ -39,15 +39,20 @@
 }
 </style>
 </head>
+<form   action="connect.php" method="post">
 <body>
 
-
+<center>
 
 
 <div class="slidecontainer">
   <input type="range" min="0" max="180" value="90" class="slider" id="myRange" name="d">
 <p>motor1</p> 
  <p>Value: <span id="demo"></span></p>
+ 
+ 
+ 
+
 
 </div>
 
@@ -80,7 +85,7 @@ slider.oninput = function() {
 
 <body>
 <div class="slidecontainer">
-  <input type="range" min="0" max="180" value="90" class="slider" id="myRange2">
+  <input type="range" min="0" max="180" value="90" class="slider" id="myRange2" name="d2">
 <p>motor2</p>
  <p>Value: <span id="demo2"></span></p>
 </div>
@@ -88,11 +93,11 @@ slider.oninput = function() {
 
 <script>
 var slide = document.getElementById("myRange2");
-var outpu = document.getElementById("demo2");
+var output = document.getElementById("demo2");
 output.innerHTML = slide.value;
 
 slide.oninput = function() {
-  outpu.innerHTML = this.value;
+  output.innerHTML = this.value;
 }
 </script>
 
@@ -102,7 +107,7 @@ slide.oninput = function() {
 <body>
 
 <div class="slidecontainer">
-  <input type="range" min="0" max="180" value="90" class="slider" id="myRange3">
+  <input type="range" min="0" max="180" value="90" class="slider" id="myRange3" name="d3">
 <p>motor3</p> 
 
  <p>Value: <span id="demo3"></span></p>
@@ -122,7 +127,7 @@ slider3.oninput = function() {
 </body>
 <body>
 <div class="slidecontainer">
-  <input type="range" min="0" max="180" value="90" class="slider" id="myRange4">
+  <input type="range" min="0" max="180" value="90" class="slider" id="myRange4" name="d4">
 <p>motor4</p>
  <p>Value: <span id="demo4"></span></p>
 </div>
@@ -146,7 +151,7 @@ slider4.oninput = function() {
 
 <body>
 <div class="slidecontainer">
-  <input type="range" min="0" max="180" value="90" class="slider" id="myRange5">
+  <input type="range" min="0" max="180" value="90" class="slider" id="myRange5" name="d5">
   <p> motor5</p>
  <p>Value: <span id="demo5"></span></p>
 </div>
@@ -166,7 +171,7 @@ slider5.oninput = function() {
 <body>
 
 <div class="slidecontainer">
-  <input type="range" min="0" max="180" value="90" class="slider" id="myRange6">
+  <input type="range" min="0" max="180" value="90" class="slider" id="myRange6" name="d6">
 <p>motor6</p>
  <p>Value: <span id="demo6"></span></p>
 </div>
@@ -185,12 +190,12 @@ slider6.oninput = function() {
 </body>
 <body>
 
+<p>
+<input type="submit" class="btn btn-primary" value="save" name="ss">
+<input type="submit" class="btn btn-primary" value="run" name="rr"></p>
+ </form>
 
 
- <input type="submit" class="btn btn-primary" value="save" name="ss">
- 
-
-<button type="button" >run</button>
 </body>
-
+</center>
 </html>
